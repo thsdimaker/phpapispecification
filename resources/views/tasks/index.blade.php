@@ -6,6 +6,7 @@
 
 @section('content')
 	<div class="px-64 mt-3">
+
 		<div class="flex">
 			<h1 class="font-bold text-3xl flex-1">글 목록</h1>
 			<a href="/tasks/create">
@@ -16,7 +17,7 @@
 		<ul>
 			@foreach($tasks as $task)
 				<a href="/tasks/{{ $task->id }}">
-					<li class="border my-3 p-3">Title: {{ $task->title }} <small class="float-right">Created at {{ $task->created_at }}</small></li>
+					<li class="border my-3 p-3">글 제목: {{ $task->title }} <small class="float-right">작성 시간 {{ $task->created_at }}</small></li>
 				</a>
 			@endforeach
 		</ul>
