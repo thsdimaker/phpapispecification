@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    꽌리자로 로그인 하셨습니다.
                 </div>
             </div>
         </div>
